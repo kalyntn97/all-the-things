@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SillyThings'
+import BobaThings from './pages/BobaThings/BobaThings'
 import Landing from './pages/Landing/Landing'
 import BrooklinThings from './pages/BrooklinsThings/BrooklinsThings'
 
@@ -62,11 +63,19 @@ const App = () => {
       attributes: ["efficient", "reusability", "not a taco", "beautiful"],
     },
   ]
+<<<<<<< HEAD
   const brooklinsThings = [
     {
       name: "dogs",
       image: "https://imgs.xkcd.com/comics/health_drink_2x.png",  
       attributes: ["fluffy", "cute", "not a teddy bear", "fun"],
+=======
+  const transThings = [
+    {
+      name: "boba",
+      image: "https://imgs.xkcd.com/comics/boba.png",  
+      attributes: ["delicious", "chewy", "sweet", "healthy"],
+>>>>>>> main
     },
   ]
 
@@ -87,9 +96,15 @@ const App = () => {
         element={<SillyThings things={huntersThings} />}
       />
       <Route
+<<<<<<< HEAD
       path="/the-dog-things"
       element={<BrooklinThings things={brooklinsThings} />}
     />
+=======
+        path="/the-boba-things"
+        element={<BobaThings things={transThings} />}
+      />
+>>>>>>> main
     </Routes>
   )
 }
