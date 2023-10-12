@@ -4,6 +4,7 @@ import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SillyThings'
 import MariasThings from './pages/MariasThings/MariasThings'
 import BobaThings from './pages/BobaThings/BobaThings'
+import BrooklinThings from './BrooklinsThings/BrooklinsThings'
 import Landing from './pages/Landing/Landing'
 
 const App = () => {
@@ -90,6 +91,15 @@ const App = () => {
     },
   ]
 
+  const brooklinsThings = [
+    {
+      name: "dogs",
+      image: "https://imgs.xkcd.com/comics/health_drink_2x.png",  
+      attributes: ["fluffy", "cute", "not a teddy bear", "fun"],
+    },
+  ]
+
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -114,6 +124,10 @@ const App = () => {
         path="/the-boba-things"
         element={<BobaThings things={transThings} />}
       />
+      <Route
+      path="/the-dog-things"
+      element={<BrooklinThings things={brooklinsThings} />}
+    />
     </Routes>
   )
 }
