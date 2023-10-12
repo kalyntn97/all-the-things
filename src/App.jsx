@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SillyThings'
+import MariasThings from './pages/MariasThings/MariasThings'
 import BobaThings from './pages/BobaThings/BobaThings'
 import Landing from './pages/Landing/Landing'
 import BrooklinThings from './pages/BrooklinsThings/BrooklinsThings'
@@ -70,6 +71,27 @@ const App = () => {
       attributes: ["fluffy", "cute", "not a teddy bear", "fun"],
     },
   ]
+  const mariasThings = [
+    {
+      name: 'banana',
+      image:
+        'https://images.unsplash.com/photo-1587132137056-bfbf0166836e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+      attributes: [
+        'potassium-rich',
+        'yellow when good',
+        'not a taco',
+        'ring ring ring ring ring ring ring',
+      ],
+    },
+    {
+      name: 'Olive',
+      image: 'https://i.imgur.com/11rG0uw.jpg',
+      attributes: ['fluffy', 'happy', 'funny'],
+    }
+  ]
+  
+  const transThings = [
+
 
   return (
     <Routes>
