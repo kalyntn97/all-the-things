@@ -3,6 +3,7 @@ import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SillyThings'
 import MariasThings from './pages/MariasThings/MariasThings'
+import BobaThings from './pages/BobaThings/BobaThings'
 import Landing from './pages/Landing/Landing'
 
 const App = () => {
@@ -80,6 +81,14 @@ const App = () => {
       attributes: ['fluffy', 'happy', 'funny'],
     }
   ]
+  
+  const transThings = [
+    {
+      name: "boba",
+      image: "https://imgs.xkcd.com/comics/boba.png",  
+      attributes: ["delicious", "chewy", "sweet", "healthy"],
+    },
+  ]
 
   return (
     <Routes>
@@ -100,6 +109,10 @@ const App = () => {
       <Route
         path="/the-healthy-things"
         element={<MariasThings things={mariasThings} />}
+      />
+      <Route
+        path="/the-boba-things"
+        element={<BobaThings things={transThings} />}
       />
     </Routes>
   )
