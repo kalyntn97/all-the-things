@@ -6,6 +6,7 @@ import MariasThings from './pages/MariasThings/MariasThings'
 import BobaThings from './pages/BobaThings/BobaThings'
 import BrooklinThings from './BrooklinsThings/BrooklinsThings'
 import Landing from './pages/Landing/Landing'
+import MugunthaThings from './pages/MugunthaThings/MugunthaThings'
 
 const App = () => {
   const bensThings = [
@@ -99,6 +100,13 @@ const App = () => {
     },
   ]
 
+  const mugunthaThings = [
+    {
+      name: "baby elephants",
+      image: "https://imgs.xkcd.com/comics/health_drink_2x.png",  
+      attributes: ["funny","adorable","playfull"],
+    },
+  ]
 
   return (
     <Routes>
@@ -128,6 +136,10 @@ const App = () => {
       path="/the-dog-things"
       element={<BrooklinThings things={brooklinsThings} />}
     />
+      <Route
+        path="/the-muguntha-things"
+        element={<MugunthaThings things={mugunthaThings} />}
+      />
     </Routes>
   )
 }
